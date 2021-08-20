@@ -17,7 +17,7 @@ class SplashScreen : AppCompatActivity() {
             }
 
             override fun onFinish() {
-                startActivity(Intent(applicationContext, MainActivity::class.java).apply {  })
+                startActivity(Intent(applicationContext, LoginActivity::class.java).apply {  })
             }
         }.start()
     }

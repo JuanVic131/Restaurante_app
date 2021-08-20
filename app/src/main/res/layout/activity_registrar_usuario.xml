@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarUsuarioActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="fondo_tienda"
+        android:scaleType="centerCrop"
+        android:scrollX="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tienda" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#22FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Registrarse"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/icon_nombre"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:contentDescription="icon_nombre"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+                        <EditText
+                            android:id="@+id/et_nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Nombre"
+                            android:inputType="textEmailAddress"
+                            android:minHeight="48dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/icon_nombre"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/icon_ciudad"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:contentDescription="icon_email"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+                        <EditText
+                            android:id="@+id/et_ciudad"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Ciudad"
+                            android:inputType="textEmailAddress"
+                            android:minHeight="48dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/icon_ciudad"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/icon_email"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:contentDescription="icon_email"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+                        <EditText
+                            android:id="@+id/et_correo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Correo"
+                            android:inputType="textEmailAddress"
+                            android:minHeight="48dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/icon_email"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/icon_password"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:contentDescription="icon_email"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+
+                        <EditText
+                            android:id="@+id/et_password"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Contraseña"
+                            android:inputType="textEmailAddress"
+                            android:minHeight="48dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/icon_password"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Fin del contenido del card -->
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Fin del condenido del Scroll -->
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
