@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_login.*
 
 
@@ -39,6 +38,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     // Viajar al activity para registrar a usuario
     private fun viewRegistrar() {
-        startActivity(Intent(this, RegistrarUsuarioActivity::class.java).apply {  })
+        startActivity(Intent(this, CreateUserActivity::class.java).apply {  })
     }
 }

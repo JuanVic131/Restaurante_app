@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestauranteApp">
         <activity
-            android:name=".RegistrarUsuarioActivity"
+            android:name=".CreateUserActivity"
             android:exported="true" />
         <activity
             android:name=".LoginActivity"

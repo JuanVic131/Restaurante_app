@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Restaurante App</string>
+
+    <!-- Todos los textos estarán en español -->
+    <string name="login">Iniciar Sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="cancel">Cancelar</string>
+    <string name="user">Usuario</string>
+    <string name="remember_user">Recordar Usuario</string>
+    <string name="name">Nombre</string>
+    <string name="city">Ciudad</string>
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="store_background">Contraseña</string>
+    <string name="icon_nombre">Icono de Nombre</string>
+    <string name="icon_email">Icono de Correo</string>
+    <string name="icon_address">Icono de Dirección</string>
+    <string name="icon_password">Icono de Contraseña</string>
 </resources>

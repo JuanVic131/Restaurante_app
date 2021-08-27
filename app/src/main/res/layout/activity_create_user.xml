@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrarUsuarioActivity">
+    tools:context=".CreateUserActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/background"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="fondo_tienda"
-        android:scaleType="centerCrop"
+        android:contentDescription="@string/store_background"
+        android:scaleType="center"
         android:scrollX="140dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,8 +21,9 @@
 
     <ScrollView
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#22FFFFFF"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +37,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardBackgroundColor="#00FFFFFF"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#E6ECE4D5"
                 app:contentPadding="10dp">
 
                 <LinearLayout
@@ -49,9 +51,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="10dp"
                         android:gravity="center_horizontal"
-                        android:text="Registrarse"
+                        android:text="@string/register"
                         android:textColor="@android:color/black"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -63,19 +65,20 @@
                             android:id="@+id/icon_nombre"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:contentDescription="icon_nombre"
+                            android:contentDescription="@string/icon_nombre"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@mipmap/ic_launcher_foreground" />
 
                         <EditText
-                            android:id="@+id/et_nombre"
+                            android:id="@+id/et_name"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:hint="Nombre"
+                            android:hint="@string/name"
                             android:inputType="textEmailAddress"
                             android:minHeight="48dp"
+                            android:autofillHints="username"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/icon_nombre"
@@ -91,19 +94,20 @@
                             android:id="@+id/icon_ciudad"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:contentDescription="icon_email"
+                            android:contentDescription="@string/icon_address"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
                         <EditText
-                            android:id="@+id/et_ciudad"
+                            android:id="@+id/et_address"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:hint="Ciudad"
+                            android:hint="@string/city"
                             android:inputType="textEmailAddress"
                             android:minHeight="48dp"
+                            android:autofillHints="postalAddress"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/icon_ciudad"
@@ -119,19 +123,20 @@
                             android:id="@+id/icon_email"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:contentDescription="icon_email"
+                            android:contentDescription="@string/icon_email"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:srcCompat="@android:drawable/ic_dialog_email" />
 
                         <EditText
-                            android:id="@+id/et_correo"
+                            android:id="@+id/et_email"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:hint="Correo"
+                            android:hint="@string/email"
                             android:inputType="textEmailAddress"
                             android:minHeight="48dp"
+                            android:autofillHints="emailAddress"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/icon_email"
@@ -147,7 +152,7 @@
                             android:id="@+id/icon_password"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:contentDescription="icon_email"
+                            android:contentDescription="@string/icon_password"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -157,9 +162,10 @@
                             android:id="@+id/et_password"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:hint="Contraseña"
-                            android:inputType="textEmailAddress"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
                             android:minHeight="48dp"
+                            android:autofillHints="password"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/icon_password"
@@ -169,6 +175,31 @@
                     <!-- Fin del contenido del card -->
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/cancel"
+                    style="@style/Widget.MaterialComponents.Button"/>
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/register"
+                    style="@style/Widget.MaterialComponents.Button"/>
+
+            </LinearLayout>
             <!-- Fin del condenido del Scroll -->
         </LinearLayout>
     </ScrollView>
