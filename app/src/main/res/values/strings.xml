@@ -5,15 +5,28 @@
     <string name="login">Iniciar Sesión</string>
     <string name="register">Registrarse</string>
     <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
     <string name="user">Usuario</string>
     <string name="remember_user">Recordar Usuario</string>
     <string name="name">Nombre</string>
     <string name="city">Ciudad</string>
     <string name="email">Correo</string>
     <string name="password">Contraseña</string>
-    <string name="store_background">Contraseña</string>
+
+    <string name="store_background">fondo</string>
     <string name="icon_nombre">Icono de Nombre</string>
     <string name="icon_email">Icono de Correo</string>
     <string name="icon_address">Icono de Dirección</string>
     <string name="icon_password">Icono de Contraseña</string>
+
+    <!-- Activity de registro para usuario -->
+    <string name="policies_title">Politicas de privacidad</string>
+    <string name="policies_message">La acplicación no sabe que politicas mostrar :3 </string>
+    <string name="extra_message">Es una lastima :(</string>
+
+    <!-- Errores -->
+    <string name="empty_field">Uno o más campos se encuentran vacios</string>
+
+    <!-- Mensajes internos -->
+    <string name="debug">DEBUG -> </string>
 </resources>
